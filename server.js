@@ -4,7 +4,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
 const products = require('./routes/products')
-// require('./config/database');
+require('./config/database');
 
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'build')))
